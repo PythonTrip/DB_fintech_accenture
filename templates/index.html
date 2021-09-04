@@ -4,558 +4,610 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Kernal IT</title>
-  <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="../static/css/ruang-admin.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Kernal IT</title>
+    <link href="../static/vendor/fontawesome-free/css/all.min.css"
+          rel="stylesheet" type="text/css">
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet" type="text/css">
+    <link href="../static/css/ruang-admin.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
-  <div id="wrapper">
+<div id="wrapper">
     <!-- Sidebar -->
-    <!-- <ul class="navbar-nav sidebar sidebar-light accordion " id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-          <img src="../static/img/logo/logo2.png">
-        </div>
-        <div class="sidebar-brand-text mx-3">KernalIT</div>
-      </a>
-      <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Мои активы</span></a>
-      </li>
-      <hr class="sidebar-divider">
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Статистика</span>
+    <!-- <ul class="navbar-nav sidebar sidebar-light accordion "
+        id="accordionSidebar">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center"
+           href="index.html">
+            <div class="sidebar-brand-icon">
+                <img src="../static/img/logo/logo2.png">
+            </div>
+            <div class="sidebar-brand-text mx-3">KernalIT</div>
         </a>
-      </li>
-      <hr class="sidebar-divider">
+        <hr class="sidebar-divider my-0">
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Мои активы</span></a>
+        </li>
+        <hr class="sidebar-divider">
+        <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Статистика</span>
+            </a>
+        </li>
+        <hr class="sidebar-divider">
 
     </ul> -->
     <!-- Sidebar -->
     <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
-        <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                aria-labelledby="searchDropdown">
-                <form class="navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-1 small"
-                      placeholder="What do you want to look for?" aria-label="Search" aria-describedby="basic-addon2"
-                      style="border-color: #3f51b5;">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="alertsDropdown">
+        <div id="content">
+            <!-- TopBar -->
+            <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+                <button id="sidebarToggleTop"
+                        class="btn btn-link rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#"
+                           id="searchDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                             aria-labelledby="searchDropdown">
+                            <form class="navbar-search">
+                                <div class="input-group">
+                                    <input type="text"
+                                           class="form-control bg-light border-1 small"
+                                           placeholder="What do you want to look for?"
+                                           aria-label="Search"
+                                           aria-describedby="basic-addon2"
+                                           style="border-color: #3f51b5;">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary"
+                                                type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#"
+                           id="alertsDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell fa-fw"></i>
+                            <span class="badge badge-danger badge-counter">3+</span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                             aria-labelledby="alertsDropdown">
 
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
-            </li>
-            <div class="topbar-divider d-none d-sm-block"></div>
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500"
+                               href="#">Show All Alerts</a>
+                        </div>
+                    </li>
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#"
+                           id="userDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
 
-                <span class="mr-2 d-none d-lg-inline text-white small">Иван Иванов</span>
-                <img class="img-profile rounded-circle" src="../static/img/boy.png" style="max-width: 60px">
-              </a>
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <!-- Topbar -->
+                            <span class="mr-2 d-none d-lg-inline text-white small">Иван Иванов</span>
+                            <img class="img-profile rounded-circle"
+                                 src="../static/img/boy.png"
+                                 style="max-width: 60px">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                             aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Settings
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Activity Log
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                               data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Topbar -->
 
-        <!-- Container Fluid-->
-        <div class="container-fluid" id="container-wrapper">
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Мои активы</h1>
+            <!-- Container Fluid-->
+            <div class="container-fluid" id="container-wrapper">
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800">Мои активы</h1>
 
-          </div>
-
-          <div class="row mb-3">
-            <!-- Стоимость активов -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Стоимость активов</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">40 000 $</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-wallet fa-2x text-primary"></i>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
+                <div class="row mb-3">
+                    <!-- Стоимость активов -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                            Стоимость активов
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            40 000 $
+                                        </div>
+                                        <div class="mt-2 mb-0 text-muted text-xs">
+                                            <span class="text-success mr-2"><i
+                                                    class="fa fa-arrow-up"></i> 3.48%</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-wallet fa-2x text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Прибыль за квартал -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                            Прибыль за квартал
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            6500 $
+                                        </div>
+                                        <div class="mt-2 mb-0 text-muted text-xs">
+                                            <span class="text-success mr-2"><i
+                                                    class="fas fa-arrow-up"></i> 12%</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-trophy fa-2x text-success"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Курс $ -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                            Курс доллара
+                                        </div>
+                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
+                                            72 ₽
+                                        </div>
+                                        <div class="mt-2 mb-0 text-muted text-xs">
+                                            <span class="text-danger mr-2"><i
+                                                    class="fas fa-arrow-down"></i> 1.10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-users fa-2x text-info"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ожидаемая прибыль -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                            Ожидаемая прибыль
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            1800 $
+                                        </div>
+                                        <div class="mt-2 mb-0 text-muted text-xs">
+                                            <span class="text-success mr-2"><i
+                                                    class="fas fa-arrow-up"></i> 2.4%</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-comments fa-2x text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Активы -->
+                    <div class="col-xl-8 col-lg-7 mb-4">
+                        <div class="card">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">
+                                    Активы</h6>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table align-items-center table-flush">
+                                    <thead class="thead-light">
+                                    <tr>
+                                        <th>Название</th>
+                                        <th>Количество</th>
+                                        <th>Цена за ед.</th>
+                                        <th>Стоимость</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for stock in stocks %}
+                                        <tr>
+                                            <td>
+                                                <div><img
+                                                        style="max-width: 40px"
+                                                        class="img-profile rounded-circle"
+                                                        src="../static/img/rosneft.jpg">
+                                                    <span class="ml-3">
+                                                        {{ stock.ticker }}</span>
+                                                </div>
+                                            </td>
+                                            <td>{{ stock.volume }} шт.</td>
+                                            <td>{{ stock.adj }} $</td>
+                                            <td>{{ stock.volume }} $
+                                                {% if stock.prof >= 0 %}
+                                                    <span class="text-success mx-2  text-xs">
+                                                    <i class="fa
+                                                    fa-arrow-up"></i>
+                                                {% else %}
+                                                    <span class="text-danger
+                                                     mx-2 text-xs"><i
+                                                        class="fa fa-arrow-down"></i>
+                                                {% endif %}
+                                                {{ stock.prof }}%</span>
+                                            </td>
+                                            <td><a href=""
+                                                   class="btn btn-sm btn-primary">Продать</a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                    <!-- Pie Chart -->
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="card mb-4">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">
+                                    Портфель</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#"
+                                       role="button" id="dropdownMenuLink"
+                                       data-toggle="dropdown"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                         aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">Период
+                                        </div>
+                                        <a class="dropdown-item" href="#">Сегодня</a>
+                                        <a class="dropdown-item" href="#">Неделя</a>
+                                        <a class="dropdown-item"
+                                           href="#">Месяц</a>
+                                        <a class="dropdown-item"
+                                           href="#">Год</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <!-- <div class="mb-3">
+                                  <div class="small text-gray-500">Акции
+                                    <div class="small float-right"><b>40 %</b></div>
+                                  </div>
+                                  <div class="progress" style="height: 12px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40"
+                                      aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                                <div class="mb-3">
+                                  <div class="small text-gray-500">Облигации
+                                    <div class="small float-right"><b>30 %</b></div>
+                                  </div>
+                                  <div class="progress" style="height: 12px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30"
+                                      aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                                <div class="mb-3">
+                                  <div class="small text-gray-500">Фонды
+                                    <div class="small float-right"><b>30 %</b></div>
+                                  </div>
+                                  <div class="progress" style="height: 12px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30"
+                                      aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div> -->
+
+                                <div class="chart-pie">
+                                    <canvas id="myPieChart"></canvas>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class=" text-gray-500">Оценка риска
+                                        <div class=" float-right">
+                                            <b>Средний</b></div>
+                                    </div>
+                                    <div class="progress"
+                                         style="height: 12px;">
+                                        <div class="progress-bar bg-warning"
+                                             role="progressbar"
+                                             style="width: 40%"
+                                             aria-valuenow="40"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Area Chart -->
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="card mb-4">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">
+                                    Стоимость активов</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle btn btn-primary btn-sm"
+                                       href="#" role="button"
+                                       id="dropdownMenuLink"
+                                       data-toggle="dropdown"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                        Месяц <i
+                                            class="fas fa-chevron-down"></i>
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                         aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">
+                                            Период
+                                        </div>
+                                        <a class="dropdown-item"
+                                           href="#">Сегодня</a>
+                                        <a class="dropdown-item"
+                                           href="#">Неделя</a>
+                                        <a class="dropdown-item active"
+                                           href="#">Месяц</a>
+
+                                        <a class="dropdown-item"
+                                           href="#">Год</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="myAreaChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <!-- Прибыль за квартал -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Прибыль за квартал</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">6500 $</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
 
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-trophy fa-2x text-success"></i><i class="fas fa-treasure-chest"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Курс $ -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Курс доллара</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">72 ₽</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Ожидаемая прибыль -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Ожидаемая прибыль</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">1800 $</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 2.4%</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-warning"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <!-- Активы -->
-            <div class="col-xl-8 col-lg-7 mb-4">
-              <div class="card">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Активы</h6>
-                </div>
-                <div class="table-responsive">
-                  <table class="table align-items-center table-flush">
-                    <thead class="thead-light">
-                      <tr>
-                        <th>Название</th>
-                        <th>Количество</th>
-                        <th>Цена за ед.</th>
-                        <th>Стоимость</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div><img style="max-width: 40px" class="img-profile rounded-circle"
-                              src="../static/img/rosneft.jpg">
-                            <span class="ml-3">Роснефть</span>
-                          </div>
-                        </td>
-                        <td>100 шт.</td>
-                        <td>9 $</td>
-                        <td>900 $
-                          <span class="text-success mx-2  text-xs"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        </td>
-                        <td><a href="" class="btn btn-sm btn-primary">Продать</a></td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div><img style="max-width: 40px" class="img-profile rounded-circle"
-                              src="../static/img/rosneft.jpg">
-                            <span class="ml-3">Роснефть</span>
-                          </div>
-                        </td>
-                        <td>100 шт.</td>
-                        <td>9 $</td>
-                        <td>900 $
-                          <span class="text-success mx-2  text-xs"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        </td>
-                        <td><a href="" class="btn btn-sm btn-primary">Продать</a></td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div><img style="max-width: 40px" class="img-profile rounded-circle"
-                              src="../static/img/rosneft.jpg">
-                            <span class="ml-3">Роснефть</span>
-                          </div>
-                        </td>
-                        <td>100 шт.</td>
-                        <td>9 $</td>
-                        <td>900 $
-                          <span class="text-success mx-2  text-xs"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        </td>
-                        <td><a href="" class="btn btn-sm btn-primary">Продать</a></td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div><img style="max-width: 40px" class="img-profile rounded-circle"
-                              src="../static/img/rosneft.jpg">
-                            <span class="ml-3">Роснефть</span>
-                          </div>
-                        </td>
-                        <td>100 шт.</td>
-                        <td>9 $</td>
-                        <td>900 $
-                          <span class="text-success mx-2  text-xs"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        </td>
-                        <td><a href="" class="btn btn-sm btn-primary">Продать</a></td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div><img style="max-width: 40px" class="img-profile rounded-circle"
-                              src="../static/img/rosneft.jpg">
-                            <span class="ml-3">Роснефть</span>
-                          </div>
-                        </td>
-                        <td>100 шт.</td>
-                        <td>9 $</td>
-                        <td>900 $
-                          <span class="text-success mx-2  text-xs"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        </td>
-                        <td><a href="" class="btn btn-sm btn-primary">Продать</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="card-footer"></div>
-              </div>
-            </div>
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Портфель</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Период</div>
-                      <a class="dropdown-item" href="#">Сегодня</a>
-                      <a class="dropdown-item" href="#">Неделя</a>
-                      <a class="dropdown-item" href="#">Месяц</a>
-                      <a class="dropdown-item" href="#">Год</a>
+            <!-- История -->
+            <div class="col-xl-12 col-lg-7 mb-4">
+                <div class="card">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">
+                            История
+                            сделок</h6>
                     </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <!-- <div class="mb-3">
-                    <div class="small text-gray-500">Акции
-                      <div class="small float-right"><b>40 %</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Облигации
-                      <div class="small float-right"><b>30 %</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Фонды
-                      <div class="small float-right"><b>30 %</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div> -->
+                    <div class="table-responsive">
+                        <table class="table align-items-center table-flush">
+                            <thead class="thead-light">
+                            <tr>
+                                <th>ID сделки</th>
+                                <th>ISIN</th>
+                                <th>Тип</th>
+                                <th>Название</th>
+                                <th>Количество</th>
+                                <th>Цена</th>
+                                <th>Дата</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="#">2505151</a></td>
+                                <td>AEA000201011</td>
+                                <td>Акция</td>
+                                <td>Роснефть</td>
+                                <td>10</td>
+                                <td>5300</td>
+                                <td>04.09.2021</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">2505151</a></td>
+                                <td>AEA000201011</td>
+                                <td>Акция</td>
+                                <td>Роснефть</td>
+                                <td>10</td>
+                                <td>5300</td>
+                                <td>04.09.2021</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">2505151</a></td>
+                                <td>AEA000201011</td>
+                                <td>Акция</td>
+                                <td>Роснефть</td>
+                                <td>10</td>
+                                <td>5300</td>
+                                <td>04.09.2021</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">2505151</a></td>
+                                <td>AEA000201011</td>
+                                <td>Акция</td>
+                                <td>Роснефть</td>
+                                <td>10</td>
+                                <td>5300</td>
+                                <td>04.09.2021</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">2505151</a></td>
+                                <td>AEA000201011</td>
+                                <td>Акция</td>
+                                <td>Роснефть</td>
+                                <td>10</td>
+                                <td>5300</td>
+                                <td>04.09.2021</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">2505151</a></td>
+                                <td>AEA000201011</td>
+                                <td>Акция</td>
+                                <td>Роснефть</td>
+                                <td>10</td>
+                                <td>5300</td>
+                                <td>04.09.2021</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">2505151</a></td>
+                                <td>AEA000201011</td>
+                                <td>Акция</td>
+                                <td>Роснефть</td>
+                                <td>10</td>
+                                <td>5300</td>
+                                <td>04.09.2021</a></td>
+                            </tr>
 
-                  <div class="chart-pie">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
 
-                  <div class="mb-3">
-                    <div class=" text-gray-500">Оценка риска
-                      <div class=" float-right"><b>Средний</b></div>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
+                    <div class="card-footer"></div>
                 </div>
-              </div>
-            </div>
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Стоимость активов</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle btn btn-primary btn-sm" href="#" role="button" id="dropdownMenuLink"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Месяц <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Период</div>
-                      <a class="dropdown-item" href="#">Сегодня</a>
-                      <a class="dropdown-item" href="#">Неделя</a>
-                      <a class="dropdown-item active" href="#">Месяц</a>
-                      <a class="dropdown-item" href="#">Год</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                </div>
-              </div>
             </div>
 
-          </div>
+            <!-- Старый варик история -->
+            <div class="col-xl-4 col-lg-5 ">
+                <div class="card ">
+                    <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-light">
+                            История</h6>
+                    </div>
+                    <div>
+                        <div class="customer-message align-items-center">
+                            <a href="#">
+                                <div class="text-truncate message-title d-flex flex-row bd-highlight">
+                                    <div class="bd-highlight">Акиця
+                                    </div>
+                                    <div class="bd-highlight">Акиця
+                                    </div>
+                                </div>
+                                <div class="small text-gray-500 message-time font-weight-bold">
+                                    Покупка · 58 м
+                                </div>
+                            </a>
+                        </div>
+                        <div class="customer-message align-items-center">
+                            <a href="#">
+                                <div class="text-truncate message-title d-flex flex-row bd-highlight">
+                                    <div class="bd-highlight">Акиця
+                                    </div>
+                                    <div class="bd-highlight">Акиця
+                                    </div>
+                                </div>
+                                <div class="small text-gray-500 message-time font-weight-bold">
+                                    Покупка · 58 м
+                                </div>
+                            </a>
+                        </div>
+                        <div class="customer-message align-items-center">
+                            <a href="#">
+                                <div class="text-truncate message-title d-flex flex-row bd-highlight">
+                                    <div class="bd-highlight">Акиця
+                                    </div>
+                                    <div class="bd-highlight">Акиця
+                                    </div>
+                                </div>
+                                <div class="small text-gray-500 message-time font-weight-bold">
+                                    Покупка · 58 м
+                                </div>
+                            </a>
+                        </div>
+                        <div class="customer-message align-items-center">
+                            <a href="#">
+                                <div class="text-truncate message-title d-flex flex-row bd-highlight">
+                                    <div class="bd-highlight">Акиця
+                                    </div>
+                                    <div class="bd-highlight">Акиця
+                                    </div>
+                                </div>
+                                <div class="small text-gray-500 message-time font-weight-bold">
+                                    Покупка · 58 м
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="m-0 small text-primary card-link"
+                               href="#">Дополнительно <i
+                                    class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-        <!-- История -->
-        <div class="col-xl-12 col-lg-7 mb-4">
-          <div class="card">
-            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-              <h6 class="m-0 font-weight-bold text-primary">История сделок</h6>
-            </div>
-            <div class="table-responsive">
-              <table class="table align-items-center table-flush">
-                <thead class="thead-light">
-                  <tr>
-                    <th>ID сделки</th>
-                    <th>ISIN</th>
-                    <th>Тип</th>
-                    <th>Название</th>
-                    <th>Количество</th>
-                    <th>Цена</th>
-                    <th>Дата</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a href="#">2505151</a></td>
-                    <td>AEA000201011</td>
-                    <td>Акция</td>
-                    <td>Роснефть</td>
-                    <td>10</td>
-                    <td>5300</td>
-                    <td>04.09.2021</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#">2505151</a></td>
-                    <td>AEA000201011</td>
-                    <td>Акция</td>
-                    <td>Роснефть</td>
-                    <td>10</td>
-                    <td>5300</td>
-                    <td>04.09.2021</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#">2505151</a></td>
-                    <td>AEA000201011</td>
-                    <td>Акция</td>
-                    <td>Роснефть</td>
-                    <td>10</td>
-                    <td>5300</td>
-                    <td>04.09.2021</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#">2505151</a></td>
-                    <td>AEA000201011</td>
-                    <td>Акция</td>
-                    <td>Роснефть</td>
-                    <td>10</td>
-                    <td>5300</td>
-                    <td>04.09.2021</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#">2505151</a></td>
-                    <td>AEA000201011</td>
-                    <td>Акция</td>
-                    <td>Роснефть</td>
-                    <td>10</td>
-                    <td>5300</td>
-                    <td>04.09.2021</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#">2505151</a></td>
-                    <td>AEA000201011</td>
-                    <td>Акция</td>
-                    <td>Роснефть</td>
-                    <td>10</td>
-                    <td>5300</td>
-                    <td>04.09.2021</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#">2505151</a></td>
-                    <td>AEA000201011</td>
-                    <td>Акция</td>
-                    <td>Роснефть</td>
-                    <td>10</td>
-                    <td>5300</td>
-                    <td>04.09.2021</a></td>
-                  </tr>
-
-
-                </tbody>
-              </table>
-            </div>
-            <div class="card-footer"></div>
-          </div>
-        </div>
-
-        <!-- Старый варик история -->
-        <div class="col-xl-4 col-lg-5 ">
-          <div class="card ">
-            <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
-              <h6 class="m-0 font-weight-bold text-light">История</h6>
-            </div>
-            <div>
-              <div class="customer-message align-items-center">
-                <a href="#">
-                  <div class="text-truncate message-title d-flex flex-row bd-highlight">
-                    <div class="bd-highlight">Акиця</div>
-                    <div class="bd-highlight">Акиця</div>
-                  </div>
-                  <div class="small text-gray-500 message-time font-weight-bold">Покупка · 58 м</div>
-                </a>
-              </div>
-              <div class="customer-message align-items-center">
-                <a href="#">
-                  <div class="text-truncate message-title d-flex flex-row bd-highlight">
-                    <div class="bd-highlight">Акиця</div>
-                    <div class="bd-highlight">Акиця</div>
-                  </div>
-                  <div class="small text-gray-500 message-time font-weight-bold">Покупка · 58 м</div>
-                </a>
-              </div>
-              <div class="customer-message align-items-center">
-                <a href="#">
-                  <div class="text-truncate message-title d-flex flex-row bd-highlight">
-                    <div class="bd-highlight">Акиця</div>
-                    <div class="bd-highlight">Акиця</div>
-                  </div>
-                  <div class="small text-gray-500 message-time font-weight-bold">Покупка · 58 м</div>
-                </a>
-              </div>
-              <div class="customer-message align-items-center">
-                <a href="#">
-                  <div class="text-truncate message-title d-flex flex-row bd-highlight">
-                    <div class="bd-highlight">Акиця</div>
-                    <div class="bd-highlight">Акиця</div>
-                  </div>
-                  <div class="small text-gray-500 message-time font-weight-bold">Покупка · 58 м</div>
-                </a>
-              </div>
-              <div class="card-footer text-center">
-                <a class="m-0 small text-primary card-link" href="#">Дополнительно <i
-                    class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!---Container Fluid-->
-  </div>
-  <!-- Footer -->
+</div>
+<!-- Footer -->
 
-  </div>
-  </div>
+</div>
+</div>
 
-  <!-- Scroll to top -->
-  <a class="scroll-to-top rounded" href="#page-top">
+<!-- Scroll to top -->
+<a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
-  </a>
+</a>
 
-  <script src="../static/vendor/jquery/jquery.min.js"></script>
-  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="../static/js/ruang-admin.min.js"></script>
-  <script src="../static/vendor/chart.js/Chart.min.js"></script>
-  <script src="../static/js/demo/chart-area-demo.js"></script>
-  <script src="../static/js/demo/chart-pie-demo.js"></script>
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../static/js/ruang-admin.min.js"></script>
+<script src="../static/vendor/chart.js/Chart.min.js"></script>
+<script src="../static/js/demo/chart-area-demo.js"></script>
+<script src="../static/js/demo/chart-pie-demo.js"></script>
+
 </body>
 
 </html>
