@@ -210,51 +210,27 @@
                                         <i class="fas fa-plus fa-fw"></i>
                                         <!-- <span class="badge badge-danger badge-counter">3+</span> -->
                                     </a>
-                                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                        aria-labelledby="alertsDropdown">
-
-                                        <table class="table align-items-center table-flush">
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th>Название</th>
-                                                    <th>Количество</th>
-                                                    <th>Цена за ед.</th>
-                                                    <th>Стоимость</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {% for stock in stocks %}
-                                                <tr>
-                                                    <td>
-                                                        <div><img style="max-width: 40px"
-                                                                class="img-profile rounded-circle"
-                                                                src="../static/img/rosneft.jpg">
-                                                            <span class="ml-3">
-                                                                {{ stock.ticker }}</span>
-                                                        </div>
-                                                    </td>
-                                                    <td>{{ stock.volume }} шт.</td>
-                                                    <td>{{ stock.adj }} $</td>
-                                                    <td>{{ stock.volume }} $
-                                                        {% if stock.prof >= 0 %}
-                                                        <span class="text-success mx-2  text-xs">
-                                                            <i class="fa
-                                                        fa-arrow-up"></i>
-                                                            {% else %}
-                                                            <span class="text-danger
-                                                         mx-2 text-xs"><i class="fa fa-arrow-down"></i>
-                                                                {% endif %}
-                                                                {{ stock.prof }}%</span>
-                                                    </td>
-                                                    <td><a href="" class="btn btn-sm btn-primary">Купить</a>
-                                                    </td>
-                                                </tr>
-                                                {% endfor %}
-
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                    aria-labelledby="searchDropdown">
+                                    <form class="navbar-search d-flex">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control bg-light border-1 small"
+                                                placeholder="Название акции" aria-label="Search" aria-describedby="basic-addon2"
+                                                style="border-color: #3f51b5;">
+                                        </div>
+                                        <div class="input-group ml-2">
+                                            <input type="text" class="form-control bg-light border-1 small"
+                                                placeholder="Количество" aria-label="Search" aria-describedby="basic-addon2"
+                                                style="border-color: #3f51b5;">
+ 
+                                        </div>
+                                        <div class="input-group-append ml-2">
+                                            <button class="btn btn-primary" type="button">
+                                                Купить
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                                 </div>
 
                                 <div class="table-responsive">
