@@ -64,6 +64,7 @@ def index(request):
         "risk": [port.get_risk_level(),
                  port.get_risk_value()],
         "exp": round(exp_price, 2),
+        "sum": round(sum_stocks, 2),
     }
 
     return render(request, "index.html", data)
