@@ -19,32 +19,39 @@
 </head>
 
 <body id="page-top">
-    <div id="wrapper">
-        <div id="content-wrapper" class="d-flex flex-column">
-            <div id="content">
-                <!-- TopBar -->
-                <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-1 small"
-                                            placeholder="Найти..." aria-label="Search" aria-describedby="basic-addon2"
-                                            style="border-color: #3f51b5;">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <!-- TopBar -->
+            <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+                <button id="sidebarToggleTop"
+                        class="btn btn-link rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#"
+                           id="searchDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                             aria-labelledby="searchDropdown">
+                            <form class="navbar-search">
+                                <div class="input-group">
+                                    <input type="text"
+                                           class="form-control bg-light border-1 small"
+                                           placeholder="What do you want to look for?"
+                                           aria-label="Search"
+                                           aria-describedby="basic-addon2"
+                                           style="border-color: #3f51b5;">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary"
+                                                type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -61,9 +68,25 @@
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="alertsDropdown">
 
+                            <a class="dropdown-item text-center fa-fw
+                            text-gray-800" href="#">
+                                Котировка SBER.ME достигла исторического пика
+                                <div class="was-validated">5.09.2021</div>
                             </a>
-                            <a class="dropdown-item text-center small text-gray-500"
-                               href="#">Show All Alerts</a>
+                            <a class="dropdown-item text-center fa-fw
+                            text-gray-800" href="#">
+                                Котировка AFLT.ME увеличивает риск портфеля.
+                                Рекомендация: замена AFLT.ME на ОФЗ 26209
+                                <div class="was-validated">5.09.2021</div>
+                            </a>
+                            <a class="dropdown-item text-center fa-fw
+                            text-gray-800" href="#">
+                                Ваш портфель имеет высокий процент
+                                содержания котировок РФ.
+                                Рекомендация: Покупка нескольких зарубежных
+                                котировок.
+                                <div class="was-validated">3.09.2021</div>
+                            </a>
                         </div>
                     </li>
                     <div class="topbar-divider d-none d-sm-block"></div>
@@ -84,30 +107,25 @@
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Profile
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Профиль
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Настройки
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Статистика
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal"
-                                    data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Выйти
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Settings
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Activity Log
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                               data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Topbar -->
 
             <!-- Container Fluid-->
             <div class="container-fluid" id="container-wrapper">
@@ -151,7 +169,7 @@
                                             Прибыль за квартал
                                         </div>
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            6500 ₽
+                                            1387.83 ₽
                                         </div>
                                         <div class="mt-2 mb-0 text-muted text-xs">
                                             <span class="text-success mr-2"><i
@@ -218,9 +236,45 @@
                     <!-- Активы -->
                     <div class="col-xl-8 col-lg-7 mb-4">
                         <div class="card">
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 <h6 class="m-0 font-weight-bold text-primary">
                                     Активы</h6>
+                                <a class="nav-link dropdown-toggle" href="#"
+                                   id="alertsDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fas fa-plus fa-fw"></i>
+                                    <!-- <span class="badge badge-danger badge-counter">3+</span> -->
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                     aria-labelledby="searchDropdown">
+                                    <form class="navbar-search d-flex">
+                                        <div class="input-group">
+                                            <input type="text"
+                                                   class="form-control bg-light border-1 small"
+                                                   placeholder="Название акции"
+                                                   aria-label="Search"
+                                                   aria-describedby="basic-addon2"
+                                                   style="border-color: #3f51b5;">
+                                        </div>
+                                        <div class="input-group ml-2">
+                                            <input type="text"
+                                                   class="form-control bg-light border-1 small"
+                                                   placeholder="Количество"
+                                                   aria-label="Search"
+                                                   aria-describedby="basic-addon2"
+                                                   style="border-color: #3f51b5;">
+
+                                        </div>
+                                        <div class="input-group-append ml-2">
+                                            <button class="btn btn-primary"
+                                                    type="button">
+                                                Купить
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
 
                             <div class="table-responsive">
@@ -279,13 +333,20 @@
                                 <h6 class="m-0 font-weight-bold text-primary">
                                     Портфель</h6>
                             </div>
+                            <div class="card-header">
+                                <h6 class="m-0 font-weight-bold text-primary">
+                                    Желаемый уровень риска: умеренный
+                                </h6>
+
+                            </div>
                             <div class="card-body">
                                 <div class="chart-pie">
                                     <canvas id="myPieChart"></canvas>
                                 </div>
 
                                 <div class="mb-3">
-                                    <div class=" text-gray-500">Оценка риска
+                                    <div class=" text-gray-500">Оценка
+                                        риска
                                         <div class=" float-right">
                                             <b>{{ risk.0 }}</b></div>
                                     </div>
@@ -300,185 +361,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Area Chart -->
-                    <div class="col-xl-8 col-lg-7">
-                        <div class="card mb-4">
-                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary">
-                                    Стоимость активов</h6>
-                            </div>
-                            <div class="card-body">
-                                <div class="chart-area">
-                                    <canvas id="myAreaChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- История -->
-            <div class="col-xl-12 col-lg-7 mb-4">
-                <div class="card">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                            История
-                            сделок</h6>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table align-items-center table-flush">
-                            <thead class="thead-light">
-                            <tr>
-                                <th>ID сделки</th>
-                                <th>ISIN</th>
-                                <th>Тип</th>
-                                <th>Название</th>
-                                <th>Количество</th>
-                                <th>Цена</th>
-                                <th>Дата</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><a href="#">2505151</a></td>
-                                <td>AEA000201011</td>
-                                <td>Акция</td>
-                                <td>Роснефть</td>
-                                <td>10</td>
-                                <td>5300</td>
-                                <td>04.09.2021</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">2505151</a></td>
-                                <td>AEA000201011</td>
-                                <td>Акция</td>
-                                <td>Роснефть</td>
-                                <td>10</td>
-                                <td>5300</td>
-                                <td>04.09.2021</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">2505151</a></td>
-                                <td>AEA000201011</td>
-                                <td>Акция</td>
-                                <td>Роснефть</td>
-                                <td>10</td>
-                                <td>5300</td>
-                                <td>04.09.2021</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">2505151</a></td>
-                                <td>AEA000201011</td>
-                                <td>Акция</td>
-                                <td>Роснефть</td>
-                                <td>10</td>
-                                <td>5300</td>
-                                <td>04.09.2021</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">2505151</a></td>
-                                <td>AEA000201011</td>
-                                <td>Акция</td>
-                                <td>Роснефть</td>
-                                <td>10</td>
-                                <td>5300</td>
-                                <td>04.09.2021</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">2505151</a></td>
-                                <td>AEA000201011</td>
-                                <td>Акция</td>
-                                <td>Роснефть</td>
-                                <td>10</td>
-                                <td>5300</td>
-                                <td>04.09.2021</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">2505151</a></td>
-                                <td>AEA000201011</td>
-                                <td>Акция</td>
-                                <td>Роснефть</td>
-                                <td>10</td>
-                                <td>5300</td>
-                                <td>04.09.2021</a></td>
-                            </tr>
-
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="card-footer"></div>
-                </div>
-            </div>
-
-            <!-- Старый варик история -->
-            <div class="col-xl-4 col-lg-5 ">
-                <div class="card ">
-                    <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-light">
-                            История</h6>
-                    </div>
-                    <div>
-                        <div class="customer-message align-items-center">
-                            <a href="#">
-                                <div class="text-truncate message-title d-flex flex-row bd-highlight">
-                                    <div class="bd-highlight">Акиця
-                                    </div>
-                                    <div class="bd-highlight">Акиця
-                                    </div>
-                                </div>
-                                <div class="small text-gray-500 message-time font-weight-bold">
-                                    Покупка · 58 м
-                                </div>
-                            </a>
-                        </div>
-                        <div class="customer-message align-items-center">
-                            <a href="#">
-                                <div class="text-truncate message-title d-flex flex-row bd-highlight">
-                                    <div class="bd-highlight">Акиця
-                                    </div>
-                                    <div class="bd-highlight">Акиця
-                                    </div>
-                                </div>
-                                <div class="small text-gray-500 message-time font-weight-bold">
-                                    Покупка · 58 м
-                                </div>
-                            </a>
-                        </div>
-                        <div class="customer-message align-items-center">
-                            <a href="#">
-                                <div class="text-truncate message-title d-flex flex-row bd-highlight">
-                                    <div class="bd-highlight">Акиця
-                                    </div>
-                                    <div class="bd-highlight">Акиця
-                                    </div>
-                                </div>
-                                <div class="small text-gray-500 message-time font-weight-bold">
-                                    Покупка · 58 м
-                                </div>
-                            </a>
-                        </div>
-                        <div class="customer-message align-items-center">
-                            <a href="#">
-                                <div class="text-truncate message-title d-flex flex-row bd-highlight">
-                                    <div class="bd-highlight">Акиця
-                                    </div>
-                                    <div class="bd-highlight">Акиця
-                                    </div>
-                                </div>
-                                <div class="small text-gray-500 message-time font-weight-bold">
-                                    Покупка · 58 м
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-footer text-center">
-                            <a class="m-0 small text-primary card-link"
-                               href="#">Дополнительно <i
-                                    class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
