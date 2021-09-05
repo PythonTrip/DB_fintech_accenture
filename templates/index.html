@@ -17,7 +17,6 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <!-- Sidebar -->
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <!-- TopBar -->
@@ -93,7 +92,6 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- Topbar -->
 
                 <!-- Container Fluid-->
                 <div class="container-fluid" id="container-wrapper">
@@ -206,8 +204,57 @@
                             <div class="card">
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">
-                                        Активы</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Активы</h6>
+                                    <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-plus fa-fw"></i>
+                                        <!-- <span class="badge badge-danger badge-counter">3+</span> -->
+                                    </a>
+                                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                        aria-labelledby="alertsDropdown">
+
+                                        <table class="table align-items-center table-flush">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th>Название</th>
+                                                    <th>Количество</th>
+                                                    <th>Цена за ед.</th>
+                                                    <th>Стоимость</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for stock in stocks %}
+                                                <tr>
+                                                    <td>
+                                                        <div><img style="max-width: 40px"
+                                                                class="img-profile rounded-circle"
+                                                                src="../static/img/rosneft.jpg">
+                                                            <span class="ml-3">
+                                                                {{ stock.ticker }}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>{{ stock.volume }} шт.</td>
+                                                    <td>{{ stock.adj }} $</td>
+                                                    <td>{{ stock.volume }} $
+                                                        {% if stock.prof >= 0 %}
+                                                        <span class="text-success mx-2  text-xs">
+                                                            <i class="fa
+                                                        fa-arrow-up"></i>
+                                                            {% else %}
+                                                            <span class="text-danger
+                                                         mx-2 text-xs"><i class="fa fa-arrow-down"></i>
+                                                                {% endif %}
+                                                                {{ stock.prof }}%</span>
+                                                    </td>
+                                                    <td><a href="" class="btn btn-sm btn-primary">Купить</a>
+                                                    </td>
+                                                </tr>
+                                                {% endfor %}
+
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
 
                                 <div class="table-responsive">
