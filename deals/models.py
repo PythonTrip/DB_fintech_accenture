@@ -6,4 +6,5 @@ class Deal(models.Model):
     person_id = models.IntegerField()
     ticker = models.CharField(max_length=20)
     adj = models.FloatField()
+    type = models.CharField(max_length=20)
     volume = models.IntegerField()

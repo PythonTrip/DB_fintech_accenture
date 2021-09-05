@@ -4,7 +4,6 @@ import pandas as pd
 import yfinance as yf
 import os
 
-
 pd.set_option('display.max_columns', None)
 
 
@@ -38,6 +37,10 @@ class Data:
 
     def save_data(self):
         self.ticker_data.to_csv(f"datasets/{self.ticker_name}.csv")
+
+    def get_cur_data(self, ticker_name):
+        return yf.download(self.ticker.info['symbol'], datetime.now(),
+                                           ).loc[:, ["Adj Close", "Volume"]]
 
     @property
     def profitability(self) -> pd.DataFrame:
