@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 from datetime import datetime
-from pycbrf.toolbox import ExchangeRates
 import pandas as pd
 import yfinance as yf
 import os
@@ -47,25 +46,3 @@ class Data:
         else:
             return self.ticker_data["Adj Close"] / self.ticker_data[
                 "Adj Close"].shift(1) - 1
-
-
-class Currency:
-    def __init__(self):
-        self.translate = {
-            "USD": 1,
-            "EUR": self.get_currency("USD") / self.get_currency("EUR"),
-            "RUB": 1 / self.get_currency("USD"),
-        }
-
-    @staticmethod
-    def get_currency(name="USD", _time=None):
-        rates = ExchangeRates(_time if _time is not None else get_now())
-        return rates[name].value
-
-    def update_courses(self, _time):
-        self.translate = {
-            "USD": 1,
-            "EUR": self.get_currency("USD", _time) / self.get_currency("EUR",
-                                                                       _time),
-            "RUB": 1 / self.get_currency("USD", _time),
-        }

@@ -53,7 +53,7 @@ def index(request):
 
     sum_stocks = 0
     exp_price = 0
-    exp_stocks = port.get_expected_prices(90)
+    exp_stocks = port.get_expected_prices(300   )
     for stock in stocks:
         sum_stocks += stock["sum"]
         exp_price += exp_stocks[stock["ticker"]] * stock["volume"] - stock[
